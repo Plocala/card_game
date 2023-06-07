@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-position: center;
+    background-color: rgb(196, 245, 245);
+    z-index: 0;
+
+}
+
+#player{
+    position: absolute;
+    left: 5.6%;
+    bottom: -3.4%;
+    transform: scale(50%,50%);
+    z-index: 6;
+
+}
+
+#player:hover{
+    transform: scale(60%,60%);
+
+}
+
+#parallaxNuvens{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url(images/nuvens.png);
+    background-repeat: repeat-x;
+    animation: parallaxNuvensAnim 236s cubic-bezier(0.09, 0.146, 0.382, 0.146) 0.1s infinite forwards;
+    z-index: 1;
+
+}
+
+@keyframes parallaxNuvensAnim{
+    0% {background-position-x: 0%;}
+    100% {background-position-x: 1000%;}
+
+}
+
+#parallax1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url(images/parallax1.png);
+    background-repeat: repeat-x;
+    animation: parallax1 90s cubic-bezier(0.09, 0.146, 0.382, 0.146) 0.1s infinite forwards;
+    z-index: 2;
+
+}
+
+@keyframes parallax1{
+    0% {background-position-x: 1000%;}
+    100% {background-position-x: 0%;}
+
+}
+
+#parallax2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    background-position: center;
+    background-image: url(images/green-mountain.png);
+    background-repeat: repeat-x;
+    animation: parallax2 34s cubic-bezier(0.09, 0.146, 0.382, 0.146) 0.1s infinite forwards;
+    z-index: 3;
+
+}
+
+@keyframes parallax2{
+    0% {background-position-x: 1000%;}
+    100% {background-position-x: 0%;}
+
+}
+
+#sol{
+    position: absolute;
+    width: 23.6%;
+    right: 9%;
+    top: 3.4%;
+    z-index: 4;
+
+}
+
+#plataformaFundo{
+    position: absolute;
+    width: 100%;
+    height: 14.6%;
+    bottom: 0;
+    background-color: rgb(142, 202, 134);
+    z-index: 4;
+
+}
+
+#plataforma{
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    bottom: 3.4%;
+    background-color: rgb(209, 176, 125);
+    z-index: 5;
+
+}
+
+#cartaSection{
+    position: absolute;
+    top: 38.2%;
+    border-radius: 8px;
+    background-color: rgb(255, 235, 181);
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+
+}
+
+.carta{
+    position: absolute;
+    width: 9%;
+    height: 14.6%;
+    top: 38.2%;
+    border-radius: 8px;
+    background-color: rgb(255, 79, 79);
+    text-align: center;
+    font-style: oblique;
+    z-index: 6;
+
+}
+
+.carta:hover{
+    transform: scale(123.6%,123.6%);
+
+}
